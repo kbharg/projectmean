@@ -1,0 +1,62 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="height: 100px; background-color: #232F3E"> 
+		<div class="container">
+			<h4 style="font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif; color: #2A6496; font-size: 24px;">E-Deals <i class="fa fa-edge" aria-hidden="true"></i></h4>
+			<div class="navbar-header"> 
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/#/users/{{user._id}}">Home</a>
+					
+				
+			</div>
+
+			
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right"> 
+					<li style="padding-right: 150px; padding-top: 16px; "><input type="text" ng-model="filter_name" placeholder="Search...">
+					</li>
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 20px">Hello {{user.username}} <b class="caret"></b></a>
+						<ul  class="dropdown-menu">
+							
+							<li><a href="/myaccount">My Account</a></li>
+							<li><a ng-click="logout()">LogOut</a></li>
+							
+						</ul>
+					</li>
+					<li class="dropdown" >
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 30px"><i style= "color: #F08804"class="fa fa-shopping-cart" aria-hidden="true"></i> {{total[total.length-1]}}<b class="caret"></b></a>
+						
+						<ul  class="dropdown-menu" >
+							<div ng-repeat= "c in cart">
+							<li style="padding-left: 20px"><a href="/myaccount">{{c.product[0].product_name}}</a></li>
+							<hr>
+							
+							</div>
+						</ul>
+						<li style="font-size: 20px"><a href="/#/cart">Cart</a></li>
+					</li>
+				</ul>
+			 </div>
+			
+		</div>
+</div>
+<div class="row">
+<div class="col-md-6" style="padding-top: 100px">
+<h3>Add a new product</h3>
+
+
+
+Name:<input type="text" ng-model = "newproduct.product_name"><br><br>
+Image:<input type="text" ng-model = "newproduct.image"><br><br>
+Description:<input type="text" ng-model = "newproduct.description"><br><br>
+Price:<input type="number" ng-model = "newproduct.price"><br><br>
+details:<input type="text" ng-model = "newproduct.details"><br><br>
+Initial Quantity: <input type="number" min="1" max="1000" name="quantity" ng-model= "newproduct.quantity"> <br><br>
+<input type="submit" ng-click = "addProduct()" value="create"><br><br><br>
+</div>
+</div>
+

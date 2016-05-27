@@ -1,0 +1,83 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="height: 120px; background-color: #232F3E "> 
+        <div class="container">
+            <h4 style="font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif; color: #2A6496 ; font-size: 35px;">E-Deals <i class="fa fa-edge" aria-hidden="true"></i></h4>
+            <div class="navbar-header"> 
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/#/users/{{user._id}}">Home</a>
+                    
+                
+            </div>
+
+            
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right"> 
+                    <li style="padding-right: 150px; padding-top: 16px; "><input type="text" ng-model="filter_name" placeholder="Search...">
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 20px">Hello {{user.username}} <b class="caret"></b></a>
+                        <ul  class="dropdown-menu">
+                            
+                            <li><a href="/#/account">My Account</a></li>
+                            <li><a ng-click="logout()">LogOut</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown" >
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 30px"><i style= "color: #F08804 "class="fa fa-shopping-cart" aria-hidden="true"></i> {{total[total.length-1]}}<b class="caret"></b></a>
+                        
+                        <ul  class="dropdown-menu" >
+                            <div ng-repeat= "c in cart">
+                            <li style="padding-left: 20px"><a href="/myaccount">{{c.product[0].product_name}}</a></li>
+                            <hr>
+                            
+                            </div>
+                        </ul>
+                        <li style="font-size: 20px"><a href="/#/cart">Cart</a></li>
+                    </li>
+                </ul>
+             </div>
+        </div>
+</div>
+
+
+<div class="header" style="min-width: 400px;padding: 100px 18px 18px;margin: 0 auto;box-sizing: border-box;display: block;">
+<div class="container" style="max-width: 1800px;margin:0 auto;display: block;">
+    <h1 id= "account" class="spacing" style=" margin-bottom: 10px;font-weight: 400;font-size: 28px;line-height: 1.2;">Shipping Address</h1>
+        <div class="form" style="display:block;border-radius:4px;border: 1px #ddd solid;background-color: #fff;height: 600px;width: 400px;padding: 10px;float:left;position:relative;">
+            <form class="personal-form" style="border-bottom:1px solid #e7e7e7;display: inline;text-align:-webkit-match-parent;">
+                First Name: <input type='text' placeholder="Firstname" ng-model='reg_firstname' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                Address 1:<input type='text' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                City:<input type='text' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                State:<input type='text' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                Country:<input type='text' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                Zip code:<input type='text' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                <div class="button" style="width:70px;margin-right:-70px;float:left;">
+                    <button type="submit" style="font-family:Roboto,sans-serif;text-transform: uppercase;outline: 0;background:#4CAF50;;width:100%;border:0;color: #FFFFFF;padding:15px;font-size: 14px;-webkit-transition: all 0.3 ease;transition: all 0.3 ease;cursor: pointer;">Cancel</button>
+                </div>
+                <div class="button" style="width:70px;margin-right:40px;float:right;">
+                    <button type="submit" style="font-family:Roboto,sans-serif;text-transform: uppercase;outline: 0;background:#4CAF50;;width:100%;border:0;color: #FFFFFF;padding:15px;font-size: 14px;-webkit-transition: all 0.3 ease;transition: all 0.3 ease;cursor: pointer;">Save</button>
+                </div>    
+            </form>            
+        </div>   
+        
+        <div class = "side" style="display:block;margin:0;position:relative;float:right;padding-right:200px;border-radius:4px;border: 1px #ddd solid;background-color: #fff;height: 400px;width: 300px;padding: 10px">
+            <h2>Credit Card Info</h2>
+                <form class="personal-form" style="border-bottom:1px solid #e7e7e7;display: inline;text-align:-webkit-match-parent;">
+                    Credit card: <i class="fa fa-credit-card" aria-hidden="true"></i><input type='text' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                    Expire date:<input type='text' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                    Name on card:<input type='text' style="font-family:Roboto,sans-serif;outline: 0;background:#f2f2f2;width:100%;border:0;margin:0 0 15px;padding:15px;box-sizing: border-box;font-size: 14px;"/>
+                    <div class="button" style="width:70px;margin-right:-70px;float:left;">
+                        <button type="submit" style="font-family:Roboto,sans-serif;text-transform: uppercase;outline: 0;background:#4CAF50;;width:100%;border:0;color: #FFFFFF;padding:15px;font-size: 14px;-webkit-transition: all 0.3 ease;transition: all 0.3 ease;cursor: pointer;">Cancel</button>
+                    </div>
+                    <div class="button" style="width:70px;margin-right:40px;float:right;">
+                        <button type="submit" style="font-family:Roboto,sans-serif;text-transform: uppercase;outline: 0;background:#4CAF50;;width:100%;border:0;color: #FFFFFF;padding:15px;font-size: 14px;-webkit-transition: all 0.3 ease;transition: all 0.3 ease;cursor: pointer;">Save</button>
+                    </div>    
+                </form>    
+
+        </div>
+</div>            

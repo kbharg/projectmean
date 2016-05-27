@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html ng-app = 'Myapp'>
+<head>
+	<title>Project</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"/></script>
+ <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-touch.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+	<script src="http://code.angularjs.org/1.5.5/angular-animate.min.js"></script>
+	<script src="http://code.angularjs.org/1.5.5/angular-touch.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="css/ngFader.css">
+	<script src="directives/ngFader.js"></script>
+
+	<script src='./app.module.js'></script>
+	<script src ='app.js'></script>
+	<script src='./app.config.js'></script>
+
+	<link type="text/css" rel="stylesheet" href="./partials/mongoose/ngFader.css">
+	 	<script src="./controllers/mongoose/ngFader.js"></script>
+	 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ 	<link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+	<script src='./factories/AuthInterceptorFactory.js'></script>
+   <script src='./factories/AuthTokenFactory.js'></script>
+   <script src='./factories/userfactory.js'></script>
+   <script src='./controllers/mongoose/logincontroller.js'></script>
+   <script src='./factories/randomuserfactory.js'></script>
+   <script src='./controllers/mongoose/userscontroller.js'></script>
+   <script src='./controllers/mongoose/productscontroller.js'></script>
+   <script src='./factories/productfactory.js'></script>
+
+
+	
+
+</head>
+<body>
+<div class="container">
+	<!-- <a href="#/">dashboard</a> | <a href="#/cart">cart</a> -->
+	<div ng-view = " "></div>
+
+</div>	
+	
+
+
+
+   
+</body>
+</html>

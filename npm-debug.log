@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-fader@1.5.5' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of /Users/panyam/Desktop/mean_project/package.json
+5 warn package.json jwt_login@ No repository field.
+6 warn package.json jwt_login@ No README data
+7 warn package.json jwt_login@ No license field.
+8 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/angular-animate/package.json
+9 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/angular-touch/package.json
+10 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/bcrypt-nodejs/package.json
+11 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/body-parser/package.json
+12 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/cors/package.json
+13 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/express-jwt/package.json
+15 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/faker/package.json
+16 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/jsonwebtoken/package.json
+17 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/mongoose/package.json
+18 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/mongoose-validator/package.json
+19 verbose installManyTop reading scoped package data from /Users/panyam/Desktop/mean_project/node_modules/xss-filters/package.json
+20 info package.json bcrypt-nodejs@0.0.3 No license field.
+21 info package.json express-jwt@3.4.0 No license field.
+22 info package.json xss-filters@1.2.6 No license field.
+23 verbose readDependencies loading dependencies from /Users/panyam/Desktop/mean_project/package.json
+24 silly cache add args [ 'angular-fader@1.5.5', null ]
+25 verbose cache add spec angular-fader@1.5.5
+26 silly cache add parsed spec Result {
+26 silly cache add   raw: 'angular-fader@1.5.5',
+26 silly cache add   scope: null,
+26 silly cache add   name: 'angular-fader',
+26 silly cache add   rawSpec: '1.5.5',
+26 silly cache add   spec: '1.5.5',
+26 silly cache add   type: 'version' }
+27 silly addNamed angular-fader@1.5.5
+28 verbose addNamed "1.5.5" is a plain semver version for angular-fader
+29 silly mapToRegistry name angular-fader
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'angular-fader',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   name: 'angular-fader',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/angular-fader
+34 verbose addNameVersion registry:https://registry.npmjs.org/angular-fader not in flight; fetching
+35 verbose request uri https://registry.npmjs.org/angular-fader
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 11:12:00 AM
+38 verbose request id 1faa48674c2626d9
+39 http request GET https://registry.npmjs.org/angular-fader
+40 http 404 https://registry.npmjs.org/angular-fader
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=0',
+41 verbose headers   'content-length': '2',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Thu, 26 May 2016 18:12:01 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   age: '0',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-sjc3135-SJC',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1464286320.986329,VS0,VE94',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 silly get cb [ 404,
+42 silly get   { 'content-type': 'application/json',
+42 silly get     'cache-control': 'max-age=0',
+42 silly get     'content-length': '2',
+42 silly get     'accept-ranges': 'bytes',
+42 silly get     date: 'Thu, 26 May 2016 18:12:01 GMT',
+42 silly get     via: '1.1 varnish',
+42 silly get     age: '0',
+42 silly get     connection: 'keep-alive',
+42 silly get     'x-served-by': 'cache-sjc3135-SJC',
+42 silly get     'x-cache': 'MISS',
+42 silly get     'x-cache-hits': '0',
+42 silly get     'x-timer': 'S1464286320.986329,VS0,VE94',
+42 silly get     vary: 'Accept-Encoding' } ]
+43 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/angular-fader
+43 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+43 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+43 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+43 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+43 verbose stack     at emitTwo (events.js:87:13)
+43 verbose stack     at Request.emit (events.js:172:7)
+43 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+43 verbose stack     at emitOne (events.js:82:20)
+43 verbose stack     at Request.emit (events.js:169:7)
+43 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+44 verbose statusCode 404
+45 verbose pkgid angular-fader
+46 verbose cwd /Users/panyam/Desktop/mean_project
+47 error Darwin 15.4.0
+48 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "angular-fader@1.5.5"
+49 error node v4.4.3
+50 error npm  v2.15.1
+51 error code E404
+52 error 404 Registry returned 404 for GET on https://registry.npmjs.org/angular-fader
+52 error 404
+52 error 404 'angular-fader' is not in the npm registry.
+52 error 404 You should bug the author to publish it (or use the name yourself!)
+52 error 404 It was specified as a dependency of 'jwt_login'
+52 error 404
+52 error 404 Note that you can also install from a
+52 error 404 tarball, folder, http url, or git url.
+53 verbose exit [ 1, true ]
